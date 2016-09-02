@@ -1,0 +1,26 @@
+.head{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-left:450px;
+  margin-top:20%;
+  position:absolute;
+}
+
+.cuerpo{
+  height:500px;
+  width:20px;
+  border-left:2px solid black;
+  margin-left:550px;
+  margin-top:40%;
+  position: absolute;
+}
+
+.brazos{
+  height:20px;
+  width:500px;
+  border-top:2px solid black;
+  margin-left:300px;
+  position:absolute;
+}
