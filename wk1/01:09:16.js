@@ -38,7 +38,7 @@ function each (arrObj,fn) {
 }
 
 
-function Item (val, idx) {
+function item (val, idx) {
     console.log('The value of item ' + idx + ' is ' + val);
 }
 var veggie= {
@@ -50,9 +50,9 @@ var veggie= {
 var fruits = [ 'banana', 'apple', 'cerise' ];
 
 
-each(veggie,Item);
+each(veggie,item);
 
-each(fruits,Item);
+each(fruits,item);
 
 /* Excercice 2
 Write a function that takes an array as a parameter and returns a
