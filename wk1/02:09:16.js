@@ -56,5 +56,55 @@ function invertCase(string) {
         }
 return newArr.join("");
 };
-var test = "hola";
-console.log(invertCase(test));
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Lemon");
+console.log (fruits);
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[fruits.length] = "Lemon";
+console.log(fruits);
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[3] = "Lemon";
+console.log(fruits);
+
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+fLen = fruits.length;
+text = "<ul>";
+for (i = 0; i < fLen; i++) {
+    text += "<li>" + fruits[i] + "</li>";
+}
+
+console.log(fruits.length)
+
+var person = [];
+person[0] = "John";
+person[1] = "Doe";
+person[2] = 46;
+var x = person.length;         // person.length will return 3
+var y = person[1];
+
+console.log(person);
+
+
+var points = [40, 100, 1, 5, 25, 10];
+console.log(points.length);
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits);
+
+var fruits = ["Banana", "Orange","Apple", "Mango"];
+fruits.join(fruits *);
+console.log(fruits);
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");
+console.log(fruits);
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift(fruits.length(2));
+console.log(fruits);
