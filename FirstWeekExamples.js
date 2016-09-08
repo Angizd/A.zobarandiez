@@ -278,3 +278,13 @@ var cars = [
 {type:"Saab", year:2001},
 {type:"BMW", year:2010}];
 console.log(cars);
+
+
+age = Number(age);
+if (isNaN(age)) {
+    voteable = "Error in input";
+} else {
+    voteable = (age < 18) ? "Too young" : "Old enough";
+}
+
+age(34);

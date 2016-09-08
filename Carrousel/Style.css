@@ -1,0 +1,34 @@
+
+.content img{
+  position:absolute;
+  display:none;
+  display:inline-block;
+  width:100%;
+  height:600px;
+}
+
+ul{
+  list-style= none;
+  width:100%;
+  position:absolute;
+  top:550px;
+  left:40%;
+  }
+
+ul li{
+      background:transparent;
+      border-radius: 50%;
+      display:inline-block;
+      border: 2px solid white;
+      width:12px;
+      height:12px;
+      cursor: pointer;
+  }
+
+.transition{
+  transition: transform 1s;
+  transform:translateX(-100%);
+  transition-timing-function: ease-in;
+}
+.image1{}
+.image2{}
