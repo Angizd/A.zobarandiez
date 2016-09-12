@@ -1,0 +1,59 @@
+.title{
+  position:relative;
+  font-size:50px;
+  font-family: AmericanTypewriter;
+  font-weight:lighter;
+  text-align:center;
+  text-decoration: underline;
+}
+
+
+.Start{
+  position:absolute;
+  border:4px dotted black;
+  width: 200px;
+  height:200px;
+  border-radius: 50%;
+  left:525px;
+  top:200px;
+
+}
+ #text p{
+  text-decoration:underline;
+  position:relative;
+  font-size:40px;
+  font-family:AmericanTypewriter;
+  color:darkred;
+  font-weight:lighter;
+  text-align:center;
+  top:40px;
+}
+
+
+.Container{
+  position:absolute;
+  left:150px;
+  top:100px;
+  height:500px;
+  width:500px;
+}
+
+
+#wordContainer{
+  position:absolute;
+  top:350px;
+  left:50%;
+  margin-bottom: 50px;
+}
+
+.complete {
+  position:absolute;
+  left:55%;
+  top:70%;
+}
+
+#solution{
+  width:200px;
+  border:2px dotted black;
+  height: 40px;
+}

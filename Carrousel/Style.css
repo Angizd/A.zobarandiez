@@ -5,6 +5,8 @@
   display:inline-block;
   width:100%;
   height:600px;
+  transition-duration: 1s;
+  transition-property: transform;
 }
 
 ul{
@@ -24,11 +26,3 @@ ul li{
       height:12px;
       cursor: pointer;
   }
-
-.transition{
-  transition: transform 1s;
-  transform:translateX(-100%);
-  transition-timing-function: ease-in;
-}
-.image1{}
-.image2{}

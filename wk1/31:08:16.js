@@ -20,6 +20,51 @@ sum( 7,8);
 sum (20,16,28);
 sum (2,3,4,8,9,10,13);
 
+
+
+
+
+
+
+var sum= function(){
+  var total=0;
+  for(var i=0; i<arguments.length; i++){
+    total += arguments[i];
+  }
+console.log(total);
+};
+sum(10,29);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var sum= function(){
+  total = 0;
+  for(i=0;i<arguments.length;i ++;){
+   total +=arguments[i];
+ console.log(total);}
+
+
+sum(7,8)
 /*
 
 Excercice 2
