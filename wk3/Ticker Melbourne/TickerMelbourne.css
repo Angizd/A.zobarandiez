@@ -1,0 +1,53 @@
+.Container{
+  position:relative;
+  Border:2px dotted black;
+  height: 30px;
+}
+body{
+  margin:0px;
+  overflow-x: hidden;
+}
+
+.Link{
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 20px;
+  font-family: AmericanTypewriter;
+  text-decoration: none;
+  color:black;
+  display:inline;
+}
+
+
+#tuesday{
+  position:absolute;
+  width:300%;
+}
+
+#Link1{
+  color:#FF8C00;
+}
+#Link2{
+  color:#FF1493;
+}
+#Link3{
+  color:#00BFFF;
+}
+
+#Link4{
+  color:#008000;
+}
+#Link5{
+  color:#9ACD32;
+}
+
+#Link6{
+  color:#DDA0DD;
+}
+#Link7{
+  color:	#DC143C;
+}
+
+#Link8{
+  color:#FA8072;
+}

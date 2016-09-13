@@ -70,11 +70,11 @@ var wordlength= word.length;
 var lines=[];
 
 for (var i=0;i<wordlength; i++){
-    lines.push("________");
+    lines.push("__________");
 }
-var linesJ=lines.join(" ");
+var linesJ=lines.join(' ');
 
-console.log(lines);
+console.log(linesJ);
 
 var wordContainer= document.getElementById('wordContainer');
 wordContainer.innerHTML = linesJ;
@@ -98,3 +98,15 @@ function whereIsTheLetter(checkedWord,solution){
   }
   return position;
 }
+
+
+solution.addEventListener('keyup',function(e){
+  var addLetter = wordContainer.value.split('');
+  console.log(addLetter);
+  for(var i=0;i< word.length;i++){
+    if(e.key == word[i]){
+      addLetter[i]=e.key;
+    }
+  }
+   wordContainer.value = addLetter.join('');
+})
