@@ -49,17 +49,18 @@
   font-weight:lighter;
   text-align:center;
   top:40px;
+  right:20px;
 }
 
  p{
-  position:relative;
+  position:absolute;
   font-size:15px;
   font-family:AmericanTypewriter;
   color:white;
   font-style: bold;
   font-weight:lighter;
-  text-align:center;
   top:30%;
+  margin-left: 20%;
 
 }
 

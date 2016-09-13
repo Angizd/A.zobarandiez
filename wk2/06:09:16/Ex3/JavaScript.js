@@ -16,9 +16,3 @@ box.addEventListener('mousedown',function(){
     var newColor = randomColor();
     box.style.backgroundColor = "#" + newColor;
 });
-
-
-box.addEventListener('mouseup',function(){
-    var newColor = randomColor();
-    box.style.backgroundColor = "#" + newColor;
-});
