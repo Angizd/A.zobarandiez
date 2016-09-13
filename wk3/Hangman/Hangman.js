@@ -21,6 +21,8 @@ function colgador(){
 function drawHead(){
  context.beginPath();
   context.arc(250,140,40,40,0,2*Math.PI);
+  context.fillStyle ='lightblue';
+  context.fill();
   context.stroke();
 }
 
@@ -60,6 +62,7 @@ function drawRightLeg(){
   context.stroke();
 }
 colgador();
+drawHead();
 
 
 var word='marie';
@@ -75,3 +78,23 @@ console.log(lines);
 
 var wordContainer= document.getElementById('wordContainer');
 wordContainer.innerHTML = linesJ;
+
+var userInput= document.getElementById('solution');
+
+var button=document.getElementById('button');
+button.addEventListener("click", function(){
+  console.log(userInput.value);
+  var solutionPositioning= whereIsTheLetter( word,userInput.value);
+  console.log(solutionPositioning);
+
+});
+
+function whereIsTheLetter(checkedWord,solution){
+  var position=[];
+  for(var i=0; i<checkedWord.length;i++){
+    if(solution == checkedWord [i]){
+       position.push(i);
+    }
+  }
+  return position;
+}

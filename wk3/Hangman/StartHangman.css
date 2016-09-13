@@ -1,0 +1,137 @@
+#background{
+  position: fixed;
+  left:0;
+  top:0;
+  height:100%;
+  width:50%;
+
+}
+
+#background2{
+  background-image:url("462.jpg");
+  position: fixed;
+  right:0;
+  top:0;
+  height:100%;
+  width:50%;
+  background-color:grey;
+}
+
+.title{
+  position:relative;
+  font-size:50px;
+  font-family: AmericanTypewriter;
+  color:black;
+  font-weight:lighter;
+  text-align:left;
+  left:80px;
+  text-decoration: underline;
+}
+
+
+.Start{
+  position:absolute;
+  border:4px dotted black;
+  background-color: white;
+  width: 200px;
+  height:200px;
+  border-radius: 50%;
+  left:530px;
+  top:200px;
+
+}
+ #text p{
+  text-decoration:underline;
+  position:relative;
+  font-size:40px;
+  font-family:AmericanTypewriter;
+  color:black;
+  font-weight:lighter;
+  text-align:center;
+  top:40px;
+}
+
+ p{
+  position:relative;
+  font-size:15px;
+  font-family:AmericanTypewriter;
+  color:white;
+  font-style: bold;
+  font-weight:lighter;
+  text-align:center;
+  top:30%;
+
+}
+
+#circulo{
+  position:absolute;
+  background-color: lightblue;
+  border:2px dotted black;
+  width: 100px;
+  height:100px;
+  border-radius:50%;
+  left:300px;
+  top:100px;
+}
+
+#circulo1{
+  position:absolute;
+  background-color: lightblue;
+  border:2px dotted black;
+  width: 50px;
+  height:50px;
+  border-radius:50%;
+  left:1000px;
+  top:200px;
+}
+#circulo2{
+  position:absolute;
+  background-color: white;
+  border:2px dotted black;
+  width: 150px;
+  height:150px;
+  border-radius:50%;
+  left:100px;
+  top:300px;
+}
+#circulo3{
+  position:absolute;
+  background-color: lightblue;
+  border:2px dotted black;
+  width: 20px;
+  height:20px;
+  border-radius:50%;
+  left:700px;
+  top:600px;
+}
+#circulo4{
+  position:absolute;
+  background-color: lightblue;
+  border:2px dotted black;
+  width: 75px;
+  height:75px;
+  border-radius:50%;
+  left:400px;
+  top:500px;
+}
+#circulo5{
+  position:absolute;
+  background-color: white;
+  border:2px dotted black;
+  width: 100px;
+  height:100px;
+  border-radius:50%;
+  left:800px;
+  top:50px;
+}
+
+#circulo6{
+  position:absolute;
+  background-color: white;
+  border:2px dotted black;
+  width: 125px;
+  height:125px;
+  border-radius:50%;
+  left:900px;
+  top:500px;
+}
