@@ -42,6 +42,7 @@
   top:350px;
   left:600px;
   margin-bottom: 50px;
+  font-size: 40px;
 }
 
 .complete {
@@ -50,7 +51,7 @@
   margin-top:350px;
 }
 
-#solution{
+#guess{
   width:200px;
   border:2px dotted black;
   height:40px;

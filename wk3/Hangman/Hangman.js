@@ -1,3 +1,5 @@
+//Draw
+
 var context= document.getElementById('Colgador').getContext('2d');
 
 
@@ -62,51 +64,84 @@ function drawRightLeg(){
   context.stroke();
 }
 colgador();
-drawHead();
 
 
-var word='marie';
-var wordlength= word.length;
+//Array with the posibilities
+
+var words=["curry","house","dog","flower","museum","magic"];
+var word = words[Math.floor(Math.random() * words.length)];
+    console.log(word);// for check the word it is
+var wordlength = word.length;
 var lines=[];
 
 for (var i=0;i<wordlength; i++){
-    lines.push("__________");
+    lines.push("_");
 }
 var linesJ=lines.join(' ');
 
-console.log(linesJ);
+console.log(linesJ);//to know how many lines
 
 var wordContainer= document.getElementById('wordContainer');
 wordContainer.innerHTML = linesJ;
 
-var userInput= document.getElementById('solution');
+var userInput= document.getElementById('guess');
 
 var button=document.getElementById('button');
 button.addEventListener("click", function(){
-  console.log(userInput.value);
-  var solutionPositioning= whereIsTheLetter( word,userInput.value);
-  console.log(solutionPositioning);
+        console.log(userInput.value);
+  var guessPositioning= whereIsTheLetter( word,userInput.value);
+  var chars= wordContainer.innerHTML.split(' ');
+  for(var i=0; i< guessPositioning.length; i++){
+    chars[guessPositioning[i]]= userInput.value;
+  }
 
+var text=chars.join(' ');
+wordContainer.innerHTML = text;
 });
 
-function whereIsTheLetter(checkedWord,solution){
+var lifecount = 0;
+
+//WRITE FUNCTION TO CHECK ALL LETTERS IN THE WORD. LOOP THROUGH ALL LETTERS
+
+function whereIsTheLetter(whereIsTheLetter,guess){
   var position=[];
-  for(var i=0; i<checkedWord.length;i++){
-    if(solution == checkedWord [i]){
+  for(var i=0; i<whereIsTheLetter.length;i++){
+    if(guess == whereIsTheLetter[i]){
        position.push(i);
     }
   }
-  return position;
-}
-
-
-solution.addEventListener('keyup',function(e){
-  var addLetter = wordContainer.value.split('');
-  console.log(addLetter);
-  for(var i=0;i< word.length;i++){
-    if(e.key == word[i]){
-      addLetter[i]=e.key;
-    }
+  if (position.length < 1) {
+    lifecount +=1;
+    console.log(lifecount);
   }
-   wordContainer.value = addLetter.join('');
-})
+  if(lifecount == 1){
+    console.log('test')
+       drawHead()
+     }
+
+     else if(lifecount ==2){
+       drawBody();
+     }
+     else if( lifecount==3){
+       drawLeftArm();
+     }
+     else if(lifecount==4){
+       drawRightArm()
+     }
+    else if(lifecount==5){
+       drawLeftLeg()
+     }
+     else if(lifecount==6){
+       drawRightLeg()
+      setTimeout(function(){alert("SORRY,YOU LOST!!!!!");},1000);
+     }
+  return position;
+};
+
+
+
+
+
+
+
+ //End of the game
