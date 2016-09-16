@@ -1,3 +1,6 @@
+body{
+  overflow: hidden;
+}
 #background{
   position: fixed;
   left:0;
@@ -66,3 +69,73 @@ button{
   border:none;
   left:156px;
 }
+.redo button{
+    display:none;
+    position:absolute;
+    border:4px dotted black;
+    background-color: white;
+    width: 500px;
+    height:500px;
+    border-radius:50%;
+    top:50px;
+    left:30%;
+
+
+  }
+
+  #redo p{
+     text-decoration:underline;
+     position:relative;
+     font-size:100px;
+     font-family:AmericanTypewriter;
+     color:black;
+     font-weight:lighter;
+     text-align:center;
+
+
+   }
+
+
+   .fullword {
+     position:relative;
+     left:600px;
+     top:50px;
+   }
+
+   #fullword{
+     width:200px;
+     border:2px dotted black;
+     height:40px;
+   }
+
+ .resolve button{
+   left:80%;
+   top:62%
+ }
+
+ #wrong{
+   position:relative;
+   width:400px;
+   height:30px;
+   border: 2px dotted black;
+   background-color:white;
+   top:75px;
+   left:60px;
+ }
+
+ #errores{
+   position:relative;
+   width:405px;
+   height:30px;
+   background-color:black;
+   top:75px;
+   left:60px;
+ }
+
+ #errores p{
+   font-family:AmericanTypewriter;
+   color:white;
+   font-weight:lighter;
+   text-align:center;
+
+ }

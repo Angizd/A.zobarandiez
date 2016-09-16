@@ -18,9 +18,21 @@
 <div id="wordContainer"></div>
 
 <div class="complete">
-  <input type="text" maxlength="1" id="guess"><button id="button">OK</button>
+  <input type="text" maxlength="1"  placeholder="Enter your guess letter" id="guess"><button id="button">OK</button>
 </div>
 
+<div class="fullword">
+  <input type="text" placeholder="Enter Full word" id="fullword"><button id="buttonFW"> OK</button>
+</div>
+
+<div class="redo">
+    <button id="redo"><a href="StartHangman.html"><p>Try again!</p></a></button>
+</div>
+<div class="resolve">
+  <button id="resolve">Resolve</button>
+</div>
+<div id="errores"><p>Mistakes</p></div>
+<div id="wrong"><p></p></div>
 
     <script src="Hangman.js"></script>
   </body>

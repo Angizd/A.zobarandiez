@@ -1,7 +1,7 @@
 //Draw
-
 var context= document.getElementById('Colgador').getContext('2d');
 
+var wrong=document.getElementById('wrong');
 
 function colgador(){
   context.beginPath();
@@ -73,75 +73,131 @@ var word = words[Math.floor(Math.random() * words.length)];
     console.log(word);// for check the word it is
 var wordlength = word.length;
 var lines=[];
+var display="";
 
 for (var i=0;i<wordlength; i++){
     lines.push("_");
 }
 var linesJ=lines.join(' ');
 
-console.log(linesJ);//to know how many lines
+var wordState;
+
+console.log(linesJ);
 
 var wordContainer= document.getElementById('wordContainer');
 wordContainer.innerHTML = linesJ;
 
-var userInput= document.getElementById('guess');
 
+//ENTER LETTER
+var userInput= document.getElementById('guess');
 var button=document.getElementById('button');
 button.addEventListener("click", function(){
-        console.log(userInput.value);
+  
   var guessPositioning= whereIsTheLetter( word,userInput.value);
-  var chars= wordContainer.innerHTML.split(' ');
+  chars= wordContainer.innerHTML.split(' ');
   for(var i=0; i< guessPositioning.length; i++){
-    chars[guessPositioning[i]]= userInput.value;
-  }
-
-var text=chars.join(' ');
-wordContainer.innerHTML = text;
+    chars[guessPositioning[i]]= userInput.value;}
+            wordState = chars.join('');
+            var text = chars.join(' ');
+            wordContainer.innerHTML = text;
+if (wordState == word){
+  setTimeout(function(){ alert("U WINNNNNN!!!!"); }, 1000);
+setTimeout(function(){tryagain();}, 2000);
+ }
 });
+
 
 var lifecount = 0;
 
-//WRITE FUNCTION TO CHECK ALL LETTERS IN THE WORD. LOOP THROUGH ALL LETTERS
-
+//WHERE IS THE LETTER
 function whereIsTheLetter(whereIsTheLetter,guess){
   var position=[];
   for(var i=0; i<whereIsTheLetter.length;i++){
     if(guess == whereIsTheLetter[i]){
        position.push(i);
-    }
-  }
+
+}
+}
+
+//DRAW THE BODY OF THE HANGMAN
   if (position.length < 1) {
     lifecount +=1;
     console.log(lifecount);
   }
   if(lifecount == 1){
     console.log('test')
-       drawHead()
+       drawHead();
+       mistake();
      }
 
      else if(lifecount ==2){
        drawBody();
+       mistake();
      }
      else if( lifecount==3){
        drawLeftArm();
+       mistake();
      }
      else if(lifecount==4){
-       drawRightArm()
+       drawRightArm();
+       mistake();
      }
     else if(lifecount==5){
-       drawLeftLeg()
+       drawLeftLeg();
+       mistake();
      }
      else if(lifecount==6){
        drawRightLeg()
-      setTimeout(function(){alert("SORRY,YOU LOST!!!!!");},1000);
+       mistake();
+        setTimeout(function(){ alert("U LOSEEEEEEEEE!!!!"); }, 1000);
+      setTimeout(function(){tryagain();}, 2000);
      }
   return position;
 };
 
 
+//MESSAGE ALERT WIN/LOSE
+var fullword=document.getElementById('fullword');
+var buttonFW=document.getElementById('buttonFW');
+buttonFW.addEventListener('click', function(){
+
+ if (fullword.value == word){
+        wordContainer.innerHTML= word;
+     setTimeout(function(){ alert("U WINNNNNNNNNNNNNN!!!!"); }, 1000);
+    setTimeout(function(){tryagain();}, 2000);
+    }
+ else{
+   (fullword.value == word);
+      wordContainer.innerHTML= word;
+   setTimeout(function(){ alert("U LOSEEEEEE!!!!"); }, 1000);
+   setTimeout(function(){tryagain();}, 2000);
+    }
+});
+
+
+// RESOLVE BUTTON
+var resolve=document.getElementById('resolve');
+resolve.addEventListener('click',function(){
+  wordContainer.innerHTML= word;
+  setTimeout(function(){ alert("U LOSEEEEEE!!!!"); }, 1000);
+setTimeout(function(){tryagain();}, 2000);
+});
 
 
 
+//TRY AGAIN APPEAR
+
+function tryagain(){
+  var tryagain=document.getElementById('redo').style.display='block';
 
 
- //End of the game
+}
+
+
+//BOX FOR THE MISTAKES
+
+function mistake(){
+  console.log('esto viene de function wrong');
+     display = display.concat(userInput.value+" ");
+      wrong.innerHTML= display;
+}
