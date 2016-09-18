@@ -1,0 +1,14 @@
+body{
+  overflow:hidden;
+}
+
+.pictures{
+  display:none;
+  top:0%;
+  left:0%;
+}
+#pattern1{
+  position:absolute;
+  top:200px;
+  left:450px;
+}
