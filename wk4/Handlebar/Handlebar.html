@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <title>Handlebars</title>
+    <link rel="stylesheet" href="Handlebars.css">
+</head>
+<body>
+
+<div id="white"></div>
+<script id="Persons" type="text/handlebars">
+
+    {{#persons}}
+    <img src={{photo}}></img>
+    <div class="container">
+        <h1>{{name}}</h1>
+        <h2>({{born}}-{{died}})</h2>
+        <ul>
+          {{#selectedWritings}}
+            <li>{{.}}</li>
+          {{/selectedWritings}}
+        </ul>
+        <h4>{{quote}}</h4>
+    </div>
+    {{/persons}}
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+<script src="Handlebars.js"></script>
+</body>
+</html>

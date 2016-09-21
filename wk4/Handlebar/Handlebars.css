@@ -1,0 +1,56 @@
+
+body{
+  overflow-x:hidden;
+  background-image: url("wall2.jpg");
+}
+
+
+.container{
+  position:relative;
+  text-align: center;
+
+}
+
+h1{
+  color:#B8860B;
+  text-align: center;
+  font-family:Times;
+  font-size:30px;
+  line-height: 3px;
+  left:25px;
+}
+
+h2{
+  color:black;
+  font-family:Times;
+  font-size:15px;
+}
+
+ul{
+color:#B8860B;
+font-family:Times;
+font-size:20px;
+list-style-position:none;
+align-self:center;
+
+}
+
+h4{
+color:black;
+font-family:Times;
+font-size:20px;
+font-style:italic;
+
+}
+
+img{
+  position:relative;
+  align-items:center;
+  border-radius:20%;
+  height:600px;
+  width:450px;
+  left:35%;
+  top:20%;
+  -webkit-filter: sepia(100%);
+  filter:sepia(100%);
+}
