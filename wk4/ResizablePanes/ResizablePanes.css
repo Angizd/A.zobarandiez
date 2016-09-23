@@ -1,0 +1,76 @@
+body{
+  overflow:hidden;
+}
+
+.todo{
+  position:absolute;
+  height:900px;
+  width:800px;
+  left:-300px;
+  top:-70px;
+}
+
+#linea{
+  position:absolute;
+  background-color:#105C78;
+  height:250px;
+  width:10px;
+  border:dotted;
+  margin-top:350px;
+
+}
+
+#Container{
+  float:left;
+  position:absolute;
+  overflow: hidden;
+  margin-top:350px;
+}
+#cerrada{
+  position:relative;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#abierta{
+  position:absolute;
+
+}
+
+
+
+#linea2{
+  position:relative;
+  background-color: #105C78;
+  border:dotted;
+  height:10px;
+  width:250px;
+  margin-left:120px;
+}
+
+.Container2{
+  position:absolute;
+  overflow:hidden;
+  margin-left:120px;
+}
+
+#ojoCerrado{
+  position:relative;
+  -webkit-filter: grayscale(100%);
+  filter:grayscale(100%);
+}
+
+#ojoAbierto{
+  position:absolute;
+
+}
+
+
+#text{
+  font-family: LipstickTraces;
+  font-size: 150px;
+  position:relative;
+  left:370px;
+  top:300px;
+  color:#40A8B4;
+}
