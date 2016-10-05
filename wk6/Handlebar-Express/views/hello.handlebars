@@ -1,0 +1,17 @@
+<!Doctype html>
+<html>
+  <head>
+    <tittle> </title>
+      <link href="/css/style.css" rel="stylesheet" type="text/css">
+  </head>
+      <body>
+        <h1> Welcome <br> to my <br>Portfolio </h1>
+
+        {{#each portfolio}}
+        <p>
+        <button><a href="/portfolio/{{this}}">{{{this}}}</button>
+        </p>
+        {{/each}}
+
+      </body>
+</html>

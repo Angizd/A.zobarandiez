@@ -1,0 +1,51 @@
+body{
+  background-color:lightblue;
+}
+
+h1{
+
+  font-family:Artistica;
+  font-size: 40px;
+  text-align: center;
+}
+
+p{
+  font-family:markmywords;
+  font-size: 15px;
+  text-align:center;
+}
+
+button p{
+  font-family:markmywords;
+  font-size: 15px;
+
+}
+button{
+  align-items: center;
+  display: inline-block;
+  background-color: white;
+  border-radius:50%;
+  border: 0px;
+  width: 100px;
+  height:100px;
+  font-family:LinealSimplesST;
+}
+
+button a:link {
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+button a:visited {
+    text-decoration: none;
+    color:black;
+    font-size: 15px;
+
+}
+
+button a:hover {
+    text-decoration: none;
+    color:lightblue;
+    font-size: 15px;
+}
