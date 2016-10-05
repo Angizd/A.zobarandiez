@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#container {
+  white-space: nowrap;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  position: relative;
+  font-size: 0;
+}
+
+a {
+  padding-right: 50px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+  margin: 0;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: monospace;
+  position: relative;
+  display: inline;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
