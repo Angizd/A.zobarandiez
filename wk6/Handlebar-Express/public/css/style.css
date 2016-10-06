@@ -1,51 +1,63 @@
 body{
-  background-color:lightblue;
+  background-image:url("/images/fondoflores-01.png");
+  background-size: 100% 150%;
+  overflow: hidden;
+}
+.titulo{
+  position:relative;
+  margin-left: 25%;
+  margin-top: 7%;
+
+}
+
+#circulo{
+  position:absolute;
+  margin-left:18%;
+  height: 300px;
+  width:300px;
 }
 
 h1{
-
+  position:absolute;
+  margin-left:26%;
+  margin-top:10%;
   font-family:Artistica;
   font-size: 40px;
   text-align: center;
 }
 
-p{
-  font-family:markmywords;
-  font-size: 15px;
-  text-align:center;
-}
 
-button p{
-  font-family:markmywords;
-  font-size: 15px;
 
-}
 button{
-  align-items: center;
-  display: inline-block;
-  background-color: white;
+  text-align: center;
+  margin-top:30%;
+  margin-left:18%;
+  position:relative;
+  display:inline-block;
+  background-color: transparent;
   border-radius:50%;
   border: 0px;
   width: 100px;
   height:100px;
   font-family:LinealSimplesST;
+  font-weight:bold;
 }
 
 button a:link {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 30px;
 
 }
 
 button a:visited {
     text-decoration: none;
-    color:black;
-    font-size: 15px;
+    color:lightblue;
+    font-size: 30px;
 
 }
 
 button a:hover {
     text-decoration: none;
-    color:lightblue;
-    font-size: 15px;
+    color:black;
+    font-size: 30px;
 }

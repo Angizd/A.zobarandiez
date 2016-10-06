@@ -1,5 +1,6 @@
 body{
-  background-color:lightblue;
+  background-color:white;
+  overflow: hidden;
 }
 
 h1{
@@ -40,15 +41,28 @@ button a:visited {
 
 button a:hover {
     text-decoration: none;
-    color:white;
+    color:lightblue;
     font-size: 20px;
 }
 
-#link {
+#link a {
+    margin-left:40%;
+    position:relative;
     text-decoration:none;
-    font-size:10px;
-    text-align: center;
-    color:black;
-    font-family: arial;
+    font-family: LinealSimplesST;
+    color:lightblue;
+    font-size: 20px;
+}
 
+#link a:hover {
+
+    text-decoration: none;
+    color:lightblue;
+    font-size: 20px;
+}
+
+#images{
+    position:absolute;
+    margin-left:34%;
+    margin-top:0%;
 }

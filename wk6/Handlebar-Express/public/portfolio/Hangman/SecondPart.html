@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hangman</title>
+        <link href="SecondPart.css" rel="Stylesheet"/>
+  </head>
+  <body>
+
+
+      <div class="art">
+
+
+          <div class="quotes"><p>"I don't want life to imitate art. I want life to be art." </p>
+                              <p> <span style="color:lightpink">Ernst Fischer</p> </div>
+          <div class="quotes"><p>"Art is not what you see, but what you make others see."</p>
+                              <p><span style="color:lightblue"> Edgar Degas</span></p> </div>
+          <div class="quotes"><p>Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep.</p>
+                              <p><span style="color:lightgreen">Scott Adams</span></p></div>
+          <div class="quotes"><p>Through a painting we can see the whole world.</p>
+                              <p><span style="color:purple">Hans Hofmann</span></p></div>
+          <div class="quotes"><p>Treat a work of art like a prince. Let it speak to you first.</p>
+                              <p><span style="color:orange">Arthur Schopenhauer</span></p></div>
+
+
+             <img src="images/PencilPink.png" width="150px" height="200px" id="pen"></img>
+             <img  src="images/PaletaRosa.png" width="150px" height="200px" id="paleta"></img>
+             <img  src="images/PincelRosa.png" width="150px" height="200px" id="pincel"></img>
+
+
+
+
+
+
+    </div>
+
+
+    <div class="Container" width="300" height="500">
+
+              <img src="images/LoveArt.png" id="drawHead" width="100" height="100"></img>
+              <img src="images/LoveArt.png" id="drawBody" width="150" height="200"></img>
+              <img src="images/LoveArt.png" id="drawLeftArm" width="50" height="150"></img>
+              <img src="images/LoveArt.png" id="drawRightArm" width="50" height="150"></img>
+              <img src="images/LoveArt.png" id="drawLeftLeg" ></img>
+              <img src="images/LoveArt.png" id="drawRightLeg" ></img>
+
+    <div id="history">
+      <a href="https://www.youtube.com/watch?v=z7ECzduUWx0" style="text-decoration:none;color:black">+ History </a>
+    </div>
+
+    </div>
+
+    <div id="wordPlace">
+        </div>
+
+    <div class="complete">
+              <input type="text" maxlength="1"  style="text-transform:uppercase" placeholder="Enter your guess letter" id="guess"><button id="button">OK</button>
+
+        </div>
+
+    <div class="fullword">
+              <input type="text" style="text-transform:uppercase" placeholder="Enter Full word" id="fullword">
+              <button id="buttonFW"> OK</button>
+        </div>
+
+    <div class="redo">
+              <button id="redo"><a href="StartHangman.html"><p>Try again!</p></a></button>
+        </div>
+
+    <div class="resolve">
+              <button id="resolve">Resolve</button>
+        </div>
+
+
+    <div id="wrong">
+        </div>
+
+   <div class="win">
+          <img id="win" src="images/Papelrasgado.png"></img>
+          <div id="textW"><p>" YES! You did it! You Win! "<p></div>
+
+  </div>
+
+  <div class="lose">
+          <img src="images/Papelrasgado.png" id="lose" ></img>
+          <div id="textL"><p>" UPS! You lose !!! "<p></div>
+
+
+  </div>
+
+  <div id="tryAgain"><a href="Start.html"  style="text-decoration: none;color:lightpink"><p> Try Again! </p></a>
+
+ </div>
+
+
+
+
+
+    <script src="SecondPart.js"></script>
+  </body>
+
+</html>

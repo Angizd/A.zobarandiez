@@ -12,52 +12,34 @@ app.engine('handlebars', hb());
 app.set('view engine', 'handlebars');
 
 app.get('/', function(req, res) {
-    res.render('hello', {
+    res.render('/hello', {
     });
 });
 
 var portfolio;
+fs.readdir(__dirname + '/public/portfolio',function(err,data){
+  portfolio = data;
+  console.log(portfolio);
+});
 
 app.get('/hello', function(req, res) {
-  fs.readdir(__dirname + '/portfolio',function(err,data){
-    portfolio = data.slice(0);
     res.render('hello', {
-      portfolio:portfolio});
-  });
+      portfolio:portfolio
+    });
 });
+
 
 var portfolioName;
-app.get('/portfolio/:portfolioName', function(request, res) {
-
-  fs.readdir(__dirname + '/portfolio',function(err,data){
-    portfolio = data.slice(0);
-    var portfolioName= request.params.portfolioName;
-    res.render(portfolioName, {
-      portfolio:portfolio});
-  });
+app.get('/portfolio/:portfolioName/description', function(request, res) {
+  var portfolioName= request.params.portfolioName;
+  res.render(portfolioName, {
+    portfolio:portfolio,
+    portfolioName:portfolioName});
 });
 
+app.get('*', function(request,res){
+  res.render('nofound');
+})
 
-
-/*
-function noErrors(){
-  var input= __dirname + '/portfolio';
-  var portfolioName;
-  if (input === portfolioName) {
-    console.log("hello");
-    return portfolioName ;
-  } else {
-    throw "Invalid";
-  }
-};
-
-try {
-  portfolioName = noErrors(); //
-}
-catch (e) {
-  portfolioName= "unknown";
-  console.log(e);
-}
-*/
 
 app.listen(8080, function() {console.log("listening on port 8080!");});

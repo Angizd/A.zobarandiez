@@ -5,13 +5,18 @@
       <link href="/css/style.css" rel="stylesheet" type="text/css">
   </head>
       <body>
+        <div class="titulo">
         <h1> Welcome <br> to my <br>Portfolio </h1>
+          <img id="circulo" src="/images/circulo.png"></img>
+        </div>
+
 
         {{#each portfolio}}
-        <p>
-        <button><a href="/portfolio/{{this}}">{{{this}}}</button>
-        </p>
+
+        <button><a href="/portfolio/{{this}}/description">{{{this}}}</a></button>
+
         {{/each}}
+
 
       </body>
 </html>

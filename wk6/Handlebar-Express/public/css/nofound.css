@@ -1,0 +1,29 @@
+body{
+overflow:hidden;
+background-image: url("/images/fondo-01.png");
+  background-size: 80% 80%;
+}
+
+h1{
+  position:relative;
+  margin-top:20%;
+  font-family:Artistica;
+  font-size: 40px;
+  text-align: center;
+}
+a{
+  margin-left:35%;
+  text-decoration: none;
+  color:black;
+  font-size: 30px;
+  font-family:LinealSimplesST;
+  font-weight:bold;
+}
+
+a:hover{
+  margin-left:38%;
+  text-decoration: none;
+  color:lightblue;
+  font-size: 30px;
+
+}
