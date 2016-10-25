@@ -133,9 +133,16 @@ button{
  }
 
  #errores p{
-   font-family:AmericanTypewriter;
+   font-family:Americantypewriter;
    color:white;
    font-weight:lighter;
    text-align:center;
+ }
 
+#win {
+   height:500px;
+   width:1200px;
+   position:absolute;
+   top:0px;
+   left:0px;
  }

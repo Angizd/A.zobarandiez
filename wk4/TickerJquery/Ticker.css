@@ -1,8 +1,8 @@
 .Container{
   position:relative;
   Border:2px none black;
-  height: 25px;
-  width: 250%;
+  height: 15px;
+  width: 120%;
 }
 body{
   margin:0px;
@@ -10,14 +10,14 @@ body{
 }
 
 .Link{
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
   font-size: 20px;
   font-family: AmericanTypewriter;
   text-decoration: none;
   color:black;
-  position: relative;
-
+  position: absolute;
+  left: 120%;
 }
 
 .Link:hover {

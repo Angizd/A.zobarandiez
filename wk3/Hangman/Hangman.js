@@ -92,7 +92,7 @@ wordContainer.innerHTML = linesJ;
 var userInput= document.getElementById('guess');
 var button=document.getElementById('button');
 button.addEventListener("click", function(){
-  
+
   var guessPositioning= whereIsTheLetter( word,userInput.value);
   chars= wordContainer.innerHTML.split(' ');
   for(var i=0; i< guessPositioning.length; i++){
@@ -192,6 +192,8 @@ function tryagain(){
 
 
 }
+
+//
 
 
 //BOX FOR THE MISTAKES
